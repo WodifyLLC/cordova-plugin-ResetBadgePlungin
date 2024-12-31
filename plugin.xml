@@ -1,20 +1,20 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.wodify.ResetBadgePlungin"
+        id="com.wodify.ResetBadgeplugin"
         version="1.0.0">
         
-    <name>ResetBadgePlungin</name>
+    <name>ResetBadgeplugin</name>
     
-    <js-module src="www/ResetBadgePlungin.js" name="ResetBadgePlungin">
-        <clobbers target="ResetBadgePlungin"/>
+    <js-module src="www/ResetBadgeplugin.js" name="ResetBadgeplugin">
+        <clobbers target="ResetBadgeplugin"/>
     </js-module>
     
     <platform name="ios">
-        <source-file src="src/ios/ResetBadgePlungin.swift" framework="true" />
+        <source-file src="src/ios/ResetBadgeplugin.swift" framework="true" />
     </platform>
     
     <platform name="android">
         <config-file parent="/*" target="AndroidManifest.xml" />
-        <source-file src="src/android/ResetBadgePlungin.java" target-dir="app/src/main/java/com/mycompany/ResetBadgePlungin" />
+        <source-file src="src/android/ResetBadgeplugin.java" target-dir="app/src/main/java/com/mycompany/ResetBadgeplugin" />
         <!-- If you need a library, list it here or use Gradle dependencies. -->
     </platform>
 </plugin>

@@ -1,16 +1,16 @@
 //
-//  ResetBadgePlungin.java
+//  ResetBadgeplugin.java
 //
-//  This is the Android implementation of the ResetBadgePlungin Cordova plugin.
+//  This is the Android implementation of the ResetBadgeplugin Cordova plugin.
 //  It uses the ShortcutBadger library to apply or remove a badge count.
 //
 //  Not all Android devices or launchers support badges. ShortcutBadger covers many,
 //  but behavior can still vary.
 //
 
-package com.mycompany.ResetBadgePlungin;
+package com.mycompany.ResetBadgeplugin;
 
-import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.Cordovaplugin;
 import org.apache.cordova.CallbackContext;
 
 import org.json.JSONArray;
@@ -18,7 +18,7 @@ import org.json.JSONException;
 
 import me.leolin.shortcutbadger.ShortcutBadger;
 
-public class ResetBadgePlungin extends CordovaPlugin {
+public class ResetBadgeplugin extends Cordovaplugin {
 
     /**
      * The Cordova runtime calls this method when it receives an 'exec' request

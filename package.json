@@ -1,0 +1,8 @@
+{
+    "name": "cordova-plugin-resetbadgeplungin",
+    "version": "0.0.1",
+    "description": "A Cordova plugin to set or clear app icon badges on iOS/Android",
+    "author": "Wodify LLC",
+    "license": "MIT"
+  }
+  
