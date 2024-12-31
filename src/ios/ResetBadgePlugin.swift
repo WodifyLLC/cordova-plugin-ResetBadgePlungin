@@ -1,11 +1,11 @@
 //
-//  ResetBadgeplugin.swift
+//  ResetBadgePlugin.swift
 //  
-//  This is the iOS implementation of the ResetBadgeplugin Cordova plugin.
+//  This is the iOS implementation of the ResetBadgePlugin Cordova plugin.
 //  It uses UIApplication's badge APIs to clear or set the icon badge number.
 //
 //  To call these methods from your OutSystems/Cordova layer, use the JavaScript
-//  bridging in ResetBadgeplugin.js.
+//  bridging in ResetBadgePlugin.js.
 //
 
 import UIKit
@@ -13,9 +13,9 @@ import UserNotifications
 import Foundation
 
 // The @objc(...) name here must match what you use in plugin.xml and the JS exec calls.
-// e.g., "ResetBadgeplugin"
-@objc(ResetBadgeplugin)
-class ResetBadgeplugin: CDVplugin {
+// e.g., "ResetBadgePlugin"
+@objc(ResetBadgePlugin)
+class ResetBadgePlugin: CDVplugin {
     
     /**
      Clears the badge number on the app icon.

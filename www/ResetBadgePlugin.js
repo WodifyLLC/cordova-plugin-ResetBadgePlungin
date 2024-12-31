@@ -1,7 +1,7 @@
 /*
   This JavaScript file is the bridge between your OutSystems (or Cordova) app
   and the native iOS/Android code. The 'exec' function calls into the native
-  layer using the plugin name ("ResetBadgeplugin") and the appropriate
+  layer using the plugin name ("ResetBadgePlugin") and the appropriate
   action method name ("clearBadge"/"setBadge").
 */
 
@@ -13,8 +13,8 @@ var exec = require('cordova/exec');
  * @param {Function} error - Callback when the operation fails
  */
 exports.clearBadge = function (success, error) {
-    // The third parameter "ResetBadgeplugin" must match the native class name
-    exec(success, error, "ResetBadgeplugin", "clearBadge", []);
+    // The third parameter "ResetBadgePlugin" must match the native class name
+    exec(success, error, "ResetBadgePlugin", "clearBadge", []);
 };
 
 /**
@@ -24,5 +24,5 @@ exports.clearBadge = function (success, error) {
  * @param {Function} error - Callback when the operation fails
  */
 exports.setBadge = function (number, success, error) {
-    exec(success, error, "ResetBadgeplugin", "setBadge", [number]);
+    exec(success, error, "ResetBadgePlugin", "setBadge", [number]);
 };

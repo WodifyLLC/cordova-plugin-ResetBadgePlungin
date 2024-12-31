@@ -1,4 +1,4 @@
-# ResetBadgeplugin
+# ResetBadgePlugin
 
 This is a custom Cordova plugin for OutSystems that lets you **set** or **clear** the badge number on both iOS and Android devices.
 
@@ -12,13 +12,13 @@ This is a custom Cordova plugin for OutSystems that lets you **set** or **clear*
 
 ```js
 // Clear the badge
-ResetBadgeplugin.clearBadge(
+ResetBadgePlugin.clearBadge(
   () => console.log("Badge cleared"),
   (err) => console.error("Failed to clear badge:", err)
 );
 
 // Set the badge to 5
-ResetBadgeplugin.setBadge(5,
+ResetBadgePlugin.setBadge(5,
   () => console.log("Badge set to 5"),
   (err) => console.error("Failed to set badge:", err)
 );
