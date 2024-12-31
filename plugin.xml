@@ -30,7 +30,6 @@
             </repository>
         </config-file>
 
-        <config-file parent="/*" target="AndroidManifest.xml" />
 
         <!-- ) Declare the ShortcutBadger library via Gradle framework -->
         <framework src="me.leolin:ShortcutBadger:1.1.22" type="gradle" />
