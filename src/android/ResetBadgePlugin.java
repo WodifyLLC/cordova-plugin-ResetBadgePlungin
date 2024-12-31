@@ -10,7 +10,7 @@
 
 package com.mycompany.ResetBadgePlugin;
 
-import org.apache.cordova.Cordovaplugin;
+import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
 import org.json.JSONArray;
@@ -18,7 +18,7 @@ import org.json.JSONException;
 
 import me.leolin.shortcutbadger.ShortcutBadger;
 
-public class ResetBadgePlugin extends Cordovaplugin {
+public class ResetBadgePlugin extends CordovaPlugin {
 
     /**
      * The Cordova runtime calls this method when it receives an 'exec' request
