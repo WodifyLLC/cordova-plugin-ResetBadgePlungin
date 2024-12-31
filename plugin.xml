@@ -3,7 +3,7 @@
         version="1.0.0">
         
     <name>ResetBadgePlugin</name>
-    
+
     <js-module src="www/ResetBadgePlugin.js" name="ResetBadgePlugin">
         <clobbers target="ResetBadgePlugin"/>
     </js-module>
@@ -13,9 +13,29 @@
     </platform>
     
     <platform name="android">
+        <config-file parent="/buildscript/repositories" target="build.gradle">
+            <repository>
+                mavenCentral()
+            </repository>
+            <repository>
+                google()
+            </repository>
+        </config-file>
+        <config-file parent="/repositories" target="build.gradle">
+            <repository>
+                mavenCentral()
+            </repository>
+            <repository>
+                google()
+            </repository>
+        </config-file>
+
         <config-file parent="/*" target="AndroidManifest.xml" />
+
+        <!-- ) Declare the ShortcutBadger library via Gradle framework -->
+        <framework src="me.leolin:ShortcutBadger:1.1.22" type="gradle" />
+
+        <!-- ) Source file for your plugin code -->
         <source-file src="src/android/ResetBadgePlugin.java" target-dir="app/src/main/java/com/mycompany/ResetBadgePlugin" />
-        <!-- If you need a library, list it here or use Gradle dependencies. -->
-        <framework src="me.leolin:ShortcutBadger:1.1.22" />
     </platform>
 </plugin>
