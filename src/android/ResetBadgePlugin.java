@@ -18,6 +18,7 @@ import org.json.JSONException;
 
 import me.leolin.shortcutbadger.ShortcutBadger;
 
+
 public class ResetBadgePlugin extends CordovaPlugin {
 
     /**

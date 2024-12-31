@@ -16,5 +16,6 @@
         <config-file parent="/*" target="AndroidManifest.xml" />
         <source-file src="src/android/ResetBadgePlugin.java" target-dir="app/src/main/java/com/mycompany/ResetBadgePlugin" />
         <!-- If you need a library, list it here or use Gradle dependencies. -->
+        <framework src="me.leolin:ShortcutBadger:1.1.22" />
     </platform>
 </plugin>
