@@ -1,40 +1,32 @@
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.wodify.ResetBadgePlugin"
-        version="1.0.0">
-        
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.wodify.ResetBadgePlugin"
+    version="1.0.0">
+    
+    <!-- Human-readable plugin name -->
     <name>ResetBadgePlugin</name>
 
+    <!-- The JavaScript module that is exposed to the web layer -->
     <js-module src="www/ResetBadgePlugin.js" name="ResetBadgePlugin">
         <clobbers target="ResetBadgePlugin"/>
     </js-module>
     
+    <!-- iOS platform: just include the Swift source -->
     <platform name="ios">
         <source-file src="src/ios/ResetBadgePlugin.swift" framework="true" />
     </platform>
     
+    <!-- Android platform: include the Java code and, if needed, ShortcutBadger. -->
     <platform name="android">
-        <config-file parent="/buildscript/repositories" target="build.gradle">
-            <repository>
-                mavenCentral()
-            </repository>
-            <repository>
-                google()
-            </repository>
-        </config-file>
-        <config-file parent="/repositories" target="build.gradle">
-            <repository>
-                mavenCentral()
-            </repository>
-            <repository>
-                google()
-            </repository>
-        </config-file>
-
-
-        <!-- ) Declare the ShortcutBadger library via Gradle framework -->
+        <!-- If you require ShortcutBadger, declare it as a Gradle framework -->
         <framework src="me.leolin:ShortcutBadger:1.1.22" type="gradle" />
 
-        <!-- ) Source file for your plugin code -->
-        <source-file src="src/android/ResetBadgePlugin.java" target-dir="app/src/main/java/com/mycompany/ResetBadgePlugin" />
+        <!-- Your main Java plugin class -->
+        <source-file 
+            src="src/android/ResetBadgePlugin.java" 
+            target-dir="app/src/main/java/com/mycompany/ResetBadgePlugin" />
     </platform>
+    
 </plugin>
