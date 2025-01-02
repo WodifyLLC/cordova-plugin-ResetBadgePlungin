@@ -8,7 +8,7 @@
 //  but behavior can still vary.
 //
 
-package com.mycompany.ResetBadgePlugin;
+package com.wodify.ResetBadgePlugin;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;

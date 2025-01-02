@@ -26,7 +26,7 @@
         <!-- Your main Java plugin class -->
         <source-file 
             src="src/android/ResetBadgePlugin.java" 
-            target-dir="app/src/main/java/com/mycompany/ResetBadgePlugin" />
+            target-dir="app/src/main/java/com/wodify/ResetBadgePlugin" />
     </platform>
     
 </plugin>
