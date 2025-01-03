@@ -2,7 +2,7 @@
 <plugin
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.example.BadgeManager"
+    id="com.wodify.BadgeManager"
     version="1.0.0">
 
     <name>BadgeManager</name>
@@ -12,7 +12,7 @@
     </js-module>
 
     <platform name="android">
-        <source-file src="src/android/BadgeManagerPlugin.java" target-dir="app/src/main/java/com/example/BadgeManager" />
+        <source-file src="src/android/BadgeManagerPlugin.java" target-dir="app/src/main/java/com/wodify/BadgeManager" />
     </platform>
 
     <platform name="ios">

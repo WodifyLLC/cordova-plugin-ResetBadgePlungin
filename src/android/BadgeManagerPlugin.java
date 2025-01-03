@@ -1,4 +1,4 @@
-package com.example.BadgeManager;
+package com.wodiy.BadgeManager;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;

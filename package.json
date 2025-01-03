@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A plugin to manage notification badges on Android and iOS",
   "cordova": {
-    "id": "com.example.BadgeManager",
+    "id": "com.wodify.BadgeManager",
     "platforms": ["android", "ios"]
   },
   "author": "Don Monpas",
