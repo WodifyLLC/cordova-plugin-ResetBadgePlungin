@@ -51,8 +51,9 @@ public class ResetBadgePlugin extends CordovaPlugin {
     private void clearBadge(CallbackContext callbackContext) {
         try {
             // ShortcutBadger.removeCount(...) removes the badge from the app icon
-            ShortcutBadger.removeCount(cordova.getContext());
-
+            Log.d(TAG, "Attempting to clear badge count");
+            ShortcutBadger.removeCount(cordova.getActivity().getApplicationContext());
+            Log.d(TAG, "Badge cleared successfully.");
             // Notify JS of success
             callbackContext.success("Badge cleared");
         } catch (Exception e) {
@@ -69,7 +70,9 @@ public class ResetBadgePlugin extends CordovaPlugin {
     private void setBadge(int number, CallbackContext callbackContext) {
         try {
             // ShortcutBadger.applyCount(...) applies the badge count
-            ShortcutBadger.applyCount(cordova.getContext(), number);
+            Log.d(TAG, "Attempting to set badge count: " + number);
+            ShortcutBadger.applyCount(cordova.getActivity().getApplicationContext(), number);
+            Log.d(TAG, "Badge set successfully.");
 
             // Notify JS of success
             callbackContext.success("Badge set to " + number);
