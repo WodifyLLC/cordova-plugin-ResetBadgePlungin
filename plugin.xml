@@ -2,31 +2,20 @@
 <plugin
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.wodify.ResetBadgePlugin"
+    id="com.example.BadgeManager"
     version="1.0.0">
-    
-    <!-- Human-readable plugin name -->
-    <name>ResetBadgePlugin</name>
 
-    <!-- The JavaScript module that is exposed to the web layer -->
-    <js-module src="www/ResetBadgePlugin.js" name="ResetBadgePlugin">
-        <clobbers target="ResetBadgePlugin"/>
+    <name>BadgeManager</name>
+
+    <js-module src="www/BadgeManager.js" name="BadgeManager">
+        <clobbers target="BadgeManager" />
     </js-module>
-    
-    <!-- iOS platform: just include the Swift source -->
-    <platform name="ios">
-        <source-file src="src/ios/ResetBadgePlugin.swift" framework="true" />
-    </platform>
-    
-    <!-- Android platform: include the Java code and, if needed, ShortcutBadger. -->
-    <platform name="android">
-        <!-- If you require ShortcutBadger, declare it as a Gradle framework -->
-        <framework src="me.leolin:ShortcutBadger:1.1.22" type="gradle" />
 
-        <!-- Your main Java plugin class -->
-        <source-file 
-            src="src/android/ResetBadgePlugin.java" 
-            target-dir="app/src/main/java/com/wodify/ResetBadgePlugin" />
+    <platform name="android">
+        <source-file src="src/android/BadgeManagerPlugin.java" target-dir="app/src/main/java/com/example/BadgeManager" />
     </platform>
-    
+
+    <platform name="ios">
+        <source-file src="src/ios/BadgeManagerPlugin.swift" />
+    </platform>
 </plugin>
